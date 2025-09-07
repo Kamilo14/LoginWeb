@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> <!--Bootstrap-->
+    <link rel="stylesheet" href="style1.css"> <!--CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!--Iconos-->
+</head>
+</head>
+<body>
+    
+    <div class="container" id="container">
+
+        <div class="formulario-registro" id="formulario-registro">
+            <form action="#">
+                <h1>Registrate aquí</h1>
+                <input type="text" placeholder="Nombre" required>
+                <input type="text" placeholder="Email" required> 
+                <input type="password" placeholder="Contraseña" required>
+                <button>Registrarse</button>
+                <span> Registrate con otra cuenta</span>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="bi bi-google"></i></a>
+                    <a href="#" class="social"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="social"><i class="bi bi-linkedin"></i></a>
+                </div>
+
+            </form>
+        </div>
+        <div class="formulario-container-login"> <!-- login formulario -->
+            <form action="#">
+                <h1>Inicia Sesion</h1>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Contraseña" required>
+                <div class="content">
+                    <div class="checkbox">
+                        <input type="checkbox" id="check">
+                        <label for="check">Recordarme</label>
+                    </div>
+                    <div class="olvidastecontraseña">
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+                </div>
+                <button class="btnLogin" id="btnLogin">Iniciar Sesión</button>
+                <span> o usa tu cuenta</span>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="bi bi-google"></i></a>
+                    <a href="#" class="social"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="social"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </form>
+
+            <div class="apartado-login"><!-- Apartado de Login-->
+                <div class="cubrir">
+                    <div class="cubrir-panel-izquierdo">
+                        <h1>¿Ya tienes una cuenta?</h1>
+                        <p>Inicia sesión para continuar disfrutando de todas las ventajas que tenemos para ti</p>
+                        <button class="btn-login2" id="btn-login2">Iniciar Sesión
+                            <i class="bi bi-arrow-left-short"></i> <!--Flechas para el btn-->
+                        </button>    
+                    </div>
+            </div>
+
+                <div class="apartado-registrarse"> <!-- Apartado de Registro-->
+                    <div class="cubrir">
+                        <div class="cubrir-panel-derecho">
+                            <h1>¿Eres nuevo aquí?</h1>
+                            <p>Regístrate y disfruta de todas las ventajas que tenemos para ti</p>
+                            <button class="btn-registro2" id="btn-registro2">Regístrate
+                                <i class="bi bi-arrow-right-short"></i> <!--Flechas para el btn-->
+                            </button>    
+                        </div>
+                    </div>
+                </div>
+                
+               
+
+
+        </div>  
+
+    
+    </div>
+    
+</body>
+</html>

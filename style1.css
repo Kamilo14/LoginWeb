@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;  /*<!--Asegura que el padding y el border no aumenten el tamaño total del elemento-->*/
+
+}
+.body{
+    display: flex; /*<!--Usa Flexbox para que sea responsivo el contenido-->*/
+    background-color: #f6f5f6;
+    justify-content: center; /*<!--Centra el contenido horizontalmente-->*/
+    align-items: center; /*<!--Centra el contenido verticalmente-->*/
+    flex-direction: column; /*<!--Organiza los elementos en una columna-->*/
+    font-family: 'Courier New', Courier, monospace; /*<!--Fuente de texto-->*/
+    overflow: hidden; /*<!--Evita barras de desplazamiento-->*/
+    height: 100vh; /*<!--Altura completa de la ventana-->*/ 
+}
+
+h1{
+    font-weight: 700; /*/<!--Fuente en negrita-->*/
+    letter-spacing: -1.5px;/*Espaciado entre letras-->*/
+    margin: 0; /*<!--Elimina el margen por defecto-->*/
+    margin:0;
+    margin-bottom: 15px;
+}
+
+h1.title{
+    font-size: 36px; /*<!--Tamaño de fuente grande para el título-->*/
+    line-height: 45px; /*<!--Altura de línea para mejorar la legibilidad-->*/
+    margin:0;
+    text-shadow: 0 0 10 px rgba(0,0,0,0.1); /*<!--Sombra sutil para el texto-->*/
+    color: #333; /*<!--Color del texto-->*/
+}
+p{
+    font-size: 14px; /*<!--Tamaño de fuente para párrafos-->*/
+    font-weight: 400; /*<!--Fuente normal-->*/
+    line-height: 20px; /*<!--Altura de línea para mejorar la legibilidad-->*/
+    letter-spacing: 0.5px; /*<!--Espaciado entre letras-->*/
+    margin: 20px 0 30px; /*<!--Margen superior e inferior-->*/
+    color: #000000; /*<!--Color del texto-->*/
+}
+span{
+    font-size: 14px;
+    margin-top: 25px;/*<!--Margen superior-->*/
+}
+a{
+    color:#333; /*<!--Color del enlace-->*/
+    font-size: 14px; /*<!--Tamaño de fuente del enlace-->*/
+    text-decoration: none; /*<!--Elimina el subrayado del enlace-->*/
+    margin: 15px 0;
+    transition: 0.3s; /*<!--Transición suave para efectos de hover-->*/
+
+}
+a:hover{
+    color:aquamarine; /*<!--Cambia el color del enlace al pasar el cursor-->*/
+    text-decoration: underline; /*<!--Subraya el enlace al pasar el cursor-->*/
+}
+.content{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.content .checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.content input{
+    accent-color: #333;
+    width: 12px;
+    height: 12px;
+}
+.content label{
+    font-size: 14px;
+    user-select: none;/*<!--Evita que el texto sea seleccionable-->*/
+    padding-left: 5px; /*<!--Espacio entre el checkbox y la etiqueta-->*/
+}
+button{
+    position:relative;
+    border-radius: 20px;
+    border: 1px;
+    background-color: rgb(242, 75, 75);
+    color: #f6f5f6;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 10px;
+    padding: 12px 80px;
+    letter-spacing: 1px;/*<!--Espaciado entre letras-->*/
+    text-transform: capitalize; /*<!--Capitaliza la primera letra de cada palabra-->*/
+    transition:  0.3s ease-in; /*<!--Animación suave al presionar el*/
+
+}
+button:active{
+    transform: scale(0.95); /*<!--Efecto de presionar el botón-->*/
+}
+button:hover{
+    letter-spacing: 2px; /*<!--Aumenta el espaciado entre letras al pasar el cursor-->*/
+}
+button:focus{
+    outline: none; /*<!--Elimina el contorno al enfocar el botón-->*/
+}
+button.btnLogin{
+    background-color: rgb(242, 75, 75);
+    border:2px solid rgb(255, 255, 255);
+}
+button.btnRegistro{
+    background-color: #333;
+    border:2px solid rgb(255, 255, 255);
+    transition: 0.3s ease-in;
+}
